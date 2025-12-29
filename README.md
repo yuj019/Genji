@@ -162,7 +162,7 @@ Mysterious depth - layered clouds, parallax effects, and subtle animations creat
 
 ## Credits
 
-I (Yumei Jin) created this portfolio template with Claude Code. My design is inspired by:
+I (Yumei Jin) created this portfolio template with Claude AI. My design is inspired by:
 - **The Tale of Genji** by Murasaki Shikibu (11th century)
 - Traditional Japanese emaki scrolls
 - Yamato-e painting style
