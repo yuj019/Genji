@@ -849,33 +849,60 @@ section {
     }
 }
 
+
+/* Desktop & Laptop Scroll Indicator Spacing */
+.hero-description {
+    margin-bottom: 100px; /* Creates space below the description text */
+}
+
+.scroll-indicator {
+    bottom: 60px; /* Positions scroll indicator with proper spacing from bottom */
+}
+
+/* For larger desktops, add even more elegant spacing */
+@media (min-width: 1440px) {
+    .hero-description {
+        margin-bottom: 120px;
+    }
+    
+    .scroll-indicator {
+        bottom: 80px;
+    }
+}
+
+/* For medium screens (tablets in landscape, small laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-description {
+        margin-bottom: 90px;
+    }
+    
+    .scroll-indicator {
+        bottom: 50px;
+    }
+}
+
 /* Mobile Scroll Indicator Spacing Fix - Final Version */
 @media (max-width: 768px) {
-    /* Make hero taller to accommodate all content */
     .hero {
         min-height: 120vh !important;
         padding-bottom: 100px !important;
     }
     
-    /* Add more space below the description text */
     .hero-description {
         margin-bottom: 120px !important;
     }
     
-    /* Keep scroll indicator at a safe distance from bottom */
     .scroll-indicator {
         bottom: 30px !important;
     }
 }
 
 @media (max-width: 480px) {
-    /* Even taller hero for small phones */
     .hero {
         min-height: 130vh !important;
         padding-bottom: 120px !important;
     }
     
-    /* More breathing room for text */
     .hero-description {
         margin-bottom: 140px !important;
         font-size: 1.05rem !important;
@@ -886,7 +913,6 @@ section {
         bottom: 25px !important;
     }
     
-    /* Make scroll text smaller if needed */
     .scroll-indicator span {
         font-size: 0.75rem !important;
     }
