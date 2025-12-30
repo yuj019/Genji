@@ -849,33 +849,45 @@ section {
     }
 }
 
-/* Mobile Scroll Indicator Spacing Fix */
+/* Mobile Scroll Indicator Spacing Fix - Final Version */
 @media (max-width: 768px) {
+    /* Make hero taller to accommodate all content */
     .hero {
-        min-height: 100vh !important;
-        padding-bottom: 150px !important; /* Increased for more space */
+        min-height: 120vh !important;
+        padding-bottom: 100px !important;
     }
     
+    /* Add more space below the description text */
     .hero-description {
-        margin-bottom: 0 !important; /* Remove any bottom margin */
+        margin-bottom: 120px !important;
     }
     
+    /* Keep scroll indicator at a safe distance from bottom */
     .scroll-indicator {
-        bottom: 40px !important; /* Position from bottom with more space */
+        bottom: 30px !important;
     }
 }
 
 @media (max-width: 480px) {
+    /* Even taller hero for small phones */
     .hero {
-        padding-bottom: 180px !important; /* Even more space on small phones */
+        min-height: 130vh !important;
+        padding-bottom: 120px !important;
     }
     
+    /* More breathing room for text */
     .hero-description {
-        font-size: 1rem !important; /* Slightly smaller to save space */
-        line-height: 1.6 !important;
+        margin-bottom: 140px !important;
+        font-size: 1.05rem !important;
+        line-height: 1.7 !important;
     }
     
     .scroll-indicator {
-        bottom: 30px !important;
+        bottom: 25px !important;
+    }
+    
+    /* Make scroll text smaller if needed */
+    .scroll-indicator span {
+        font-size: 0.75rem !important;
     }
 }
