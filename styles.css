@@ -852,27 +852,30 @@ section {
 /* Mobile Scroll Indicator Spacing Fix */
 @media (max-width: 768px) {
     .hero {
-        min-height: 100vh;
-        padding-bottom: 120px;
+        min-height: 100vh !important;
+        padding-bottom: 150px !important; /* Increased for more space */
     }
     
-    .hero-subtitle {
-        margin-bottom: 80px;
+    .hero-description {
+        margin-bottom: 0 !important; /* Remove any bottom margin */
     }
     
     .scroll-indicator {
-        margin-top: 60px;
+        bottom: 40px !important; /* Position from bottom with more space */
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding-bottom: 140px;
+        padding-bottom: 180px !important; /* Even more space on small phones */
     }
     
-    .hero-subtitle {
-        margin-bottom: 90px;
-        font-size: 0.95rem;
-        line-height: 1.6;
+    .hero-description {
+        font-size: 1rem !important; /* Slightly smaller to save space */
+        line-height: 1.6 !important;
+    }
+    
+    .scroll-indicator {
+        bottom: 30px !important;
     }
 }
