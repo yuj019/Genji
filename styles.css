@@ -848,3 +848,31 @@ section {
         page-break-inside: avoid;
     }
 }
+
+/* Mobile Scroll Indicator Spacing Fix */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        padding-bottom: 120px;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: 80px;
+    }
+    
+    .scroll-indicator {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-bottom: 140px;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: 90px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
