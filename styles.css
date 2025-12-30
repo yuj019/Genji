@@ -852,7 +852,7 @@ section {
 
 /* Desktop & Laptop Scroll Indicator Spacing */
 .hero-description {
-    margin-bottom: 100px; /* Creates space below the description text */
+    margin-bottom: 300px; /* Creates space below the description text */
 }
 
 .scroll-indicator {
@@ -862,7 +862,7 @@ section {
 /* For larger desktops, add even more elegant spacing */
 @media (min-width: 1440px) {
     .hero-description {
-        margin-bottom: 120px;
+        margin-bottom: 360px;
     }
     
     .scroll-indicator {
@@ -873,7 +873,7 @@ section {
 /* For medium screens (tablets in landscape, small laptops) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero-description {
-        margin-bottom: 90px;
+        margin-bottom: 270px;
     }
     
     .scroll-indicator {
